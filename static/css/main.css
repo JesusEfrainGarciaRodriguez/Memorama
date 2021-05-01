@@ -1,6 +1,6 @@
 @font-face {
     font-family: marvel;
-    src: url(static/img/MarvelRegular.ttf);
+    src: url(/static/css/MarvelRegular.ttf);
 }
 
 /* Etiquetas */
@@ -110,4 +110,18 @@ header{
 
 #logo {
     width: 10%; float: left; height: inherit; margin-left: 1vw;
+}
+
+#tiempo {
+    float: right;
+}
+
+#titulo {
+    left: 0; 
+    right: 0; 
+    position: absolute;
+}
+
+#tablero {
+    display: inline-block;
 }
