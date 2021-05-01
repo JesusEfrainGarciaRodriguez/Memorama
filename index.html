@@ -8,7 +8,7 @@
     <style>
         @font-face {
             font-family: marvel;
-            src: url(img/MarvelRegular.ttf);
+            src: url(static/img/MarvelRegular.ttf);
         }
 
         .card {
@@ -102,11 +102,11 @@
             if (gradosDiv == 0) {
                 carta.parentNode.style.transform = "rotateY(180deg)";
                 carta.parentNode.setAttribute("grados", 180);
-                carta.setAttribute("src", "img/img" + posicionTarjeta[carta.getAttribute("id") - 1] + ".jpg");
+                carta.setAttribute("src", "static/img/img" + posicionTarjeta[carta.getAttribute("id") - 1] + ".jpg");
             } else {
                 carta.parentNode.style.transform = "rotateY(0deg)";
                 carta.parentNode.setAttribute("grados", 0);
-                carta.setAttribute("src", "img/oculto.jpg");
+                carta.setAttribute("src", "static/img/oculto.jpg");
             }
         }
 
@@ -216,7 +216,7 @@
                     div.setAttribute("grados", "0");
 
                     var img = document.createElement("img");
-                    img.setAttribute("src", "img/oculto.jpg");
+                    img.setAttribute("src", "static/img/oculto.jpg");
                     img.setAttribute("id", id);
                     img.setAttribute("onclick", "rotar(this), juego(this)");
                     img.setAttribute("style","border-radius: 4px;")
@@ -293,7 +293,7 @@
 <body style="background: radial-gradient(circle, rgba(235,9,9,1) 0%, rgba(0,0,0,1) 100%);">
     
     <header>
-        <img src="img/MarvelLogo.svg" alt="" style="width: 10%; float: left; height: inherit; margin-left: 1vw;">
+        <img src="static/img/MarvelLogo.svg" alt="" style="width: 10%; float: left; height: inherit; margin-left: 1vw;">
         <div style="left: 0; right: 0; position: absolute;">MEMORAMA</div>
         
     </header>
